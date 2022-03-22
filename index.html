@@ -6,10 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportPlayer-DOM</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
     <h1>SportPlayer-DOM</h1>
-    
-    <script src="./js/app.js"></script>
+    <div class="container w-100 m-auto text-center">
+        <div class="row w-100 m-auto">
+            <!-- left column -->
+            <div class="col-md-6 w-100 m-auto text-center">
+                <div class="form-inline">
+                    <input id="search-box" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button onclick="allplayers()" id="search-btn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <div id="player-container">
+                        <!-- parent div of div -->
+                    </div>
+                </div>                
+            </div>
+            <!-- right   column -->
+            <div class="col-md-6 text-center">
+                <h1>right side</h1>
+                <div id="details-container" class="details-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add script -->
+    <script src="js/app.js"></script>
 </body>
 </html>
